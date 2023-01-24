@@ -15,165 +15,237 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/home.css">
 
   <title>Home | Sabores del Mundo</title>
 </head>
 
 <body>
-  <header style="
-        background-image: url(./img/Foto1.jpg);
-        background-position: center;
-        background-size: cover;
-      ">
-    <img style="width: 30px; min-width: 70px; border-radius: 50%; padding: 3px" src="./img/logo.png"
-      alt="logo de sabores del mundo">
-    <h1 style="color: blanchedalmond; padding: 3px">
-      Sabores del Mundo
-    </h1>
+  <header>
+    <img src="./img/logo.png" alt="logo de sabores del mundo">
+
+    <h1>Sabores del Mundo</h1>
+
     <nav>
-      <ul style="list-style: none">
-        <li>Inicio</li>
+      <ul>
+        <li>Home</li>
         <li>
-          <a style="color: blanchedalmond" href="./pages/nosotros.html">Nosotros</a>
+          <a href="./pages/nosotros.html">Nosotros</a>
         </li>
         <li>
-          <a style="color: blanchedalmond" href="./pages/recetas.html">Recetas</a>
+          <a href="./pages/recetas.html">Recetas</a>
         </li>
         <li>
-          <a style="color: blanchedalmond" href="./pages/contacto.html">Contacto</a>
+          <a href="./pages/contacto.html">Contacto</a>
         </li>
       </ul>
     </nav>
     <div>
-      <a style="color: blanchedalmond;  padding: 3px" href="#comida"><i class="fa-solid fa-utensils"></i></a>
-      <a style="color: blanchedalmond;  padding: 3px" href="#aperitivo"><i class="fa-solid fa-burger"></i></a>
-      <a style="color: blanchedalmond;  padding: 3px" href="#bebida"><i class="fa-solid fa-wine-glass-empty"></i></a>
+      <a href="#comida"><i class="fa-solid fa-utensils"></i></a>
+      <a href="#aperitivo"><i class="fa-solid fa-burger"></i></a>
+      <a href="#bebida"><i class="fa-solid fa-wine-glass-empty"></i></a>
     </div>
   </header>
 
   <main>
     <section>
-      <h2>En Sabores del Mundo...</h2>
-      <p>
-        Somos paladares aventureros, un viaje alrededor del planeta en busca de
-        los sabores más diversos y exóticos que se ocultan en cada rincón. Un
-        verdadero abanico cultural que se expresa a través de platos auténticos
-        de los cinco continentes. Siguenos en nuestras
-        <a style="color: darkred" href="#footer">Redes sociales</a>
-      </p>
-    </section>
+      <article class="sections">
+        <h2>En Sabores del Mundo...</h2>
+        <p>
+          Somos paladares aventureros, un viaje alrededor del planeta en busca de
+          los sabores más diversos y exóticos que se ocultan en cada rincón. Un
+          verdadero abanico cultural que se expresa a través de platos auténticos
+          de los cinco continentes. Siguenos en nuestras
+          <a href="#footer">Redes sociales</a>
+        </p>
+      </article>
 
-    <section>
-      <article>
+      <br>
+
+      <article class="sections">
         <h3 id="bebida">
           QUÉ BEBIDA ELEGIR EN NAVIDAD: 6 OPCIONES TÍPICAS ALREDEDOR DEL MUNDO
         </h3>
-        <img style="width: 20%" src="./img/BEBIDAS.jpg" alt="BEBIDAS DE NAVIDAD" />
-        <p>
-          Sabor y tradición forman la fusión perfecta en esta época, pues en
-          las fiestas de fin de año las reuniones giran alrededor de la comida
-          y la bebida. Juntos vamos a disfrutar de un recorrido por diferentes
-          brebajes alrededor del mundo que son imprescindibles en esta
-          temporada navideña.
-        </p>
-        <ul style="list-style: none">
-          <li>Sidra de manzana</li>
-          <img style="width: 20%" src="./img/BEBIDA1.jpg" alt="Sidra de manzana" />
-          <li>Eggnog</li>
-          <img style="width: 20%" src="./img/BEBIDA2.jpg" alt="Eggnog" />
-          <li>Ponche de frutas</li>
-          <img style="width: 20%" src="./img/BEBIDA3.jpg" alt="Ponche de frutas" />
-          <li>Cola de mono</li>
-          <img style="width: 20%" src="./img/BEBIDA4.jpg" alt="Cola de mono" />
-          <li>Coquito</li>
-          <img style="width: 20%" src="./img/BEBIDA5.jpg" alt="Coquito" />
-          <li>Leche de semillas de amapola</li>
-          <img style="width: 20%" src="./img/BEBIDA6.jpg" alt="Leche de semillas de amapola" />
+        <div class="tema">
+          <img class="tema_img" src="./img/BEBIDAS.jpg" alt="BEBIDAS DE NAVIDAD" />
+          <p class="temaUno">
+            Sabor y tradición forman la fusión perfecta en esta época, pues en
+            las fiestas de fin de año las reuniones giran alrededor de la comida
+            y la bebida. Juntos vamos a disfrutar de un recorrido por diferentes
+            brebajes alrededor del mundo que son imprescindibles en esta
+            temporada navideña.
+          </p>
+        </div>
+
+        <ul class="lista">
+          <li class="lista_item">
+            <h4>Sidra de manzana</h4>
+            <img src="./img/BEBIDA1.jpg" alt="Sidra de manzana" />
+          </li>
+
+          <li class="lista_item">
+            <h4>Eggnog</h4>
+            <img src="./img/BEBIDA2.jpg" alt="Eggnog" />
+          </li>
+
+          <li class="lista_item">
+            <h4>Ponche de frutas</h4>
+            <img src="./img/BEBIDA3.jpg" alt="Ponche de frutas" />
+          </li>
+
+          <li class="lista_item">
+            <h4>Cola de mono</h4>
+            <img src="./img/BEBIDA4.jpg" alt="Cola de mono" />
+          </li>
+
+          <li class="lista_item">
+            <h4>Coquito</h4>
+            <img src="./img/BEBIDA5.jpg" alt="Coquito" />
+          </li>
+
+          <li class="lista_item">
+            <h4>Leche de semillas de amapola</h4>
+            <img src="./img/BEBIDA6.jpg" alt="Leche de semillas de amapola" />
+          </li>
+
         </ul>
+
       </article>
-      <hr />
-      <article>
+      <br>
+
+      <article class="sections">
         <h3 id="comida">4 PLATILLOS NAVIDEÑOS EN VERSIÓN SALUDABLE</h3>
-        <img style="width: 20%" src="./img/Comida.jpg" alt="Pavo relleno de verduras" />
-        <p>
-          Entre la Navidad, el Año Nuevo y las reuniones con amigos que nunca
-          faltan, diciembre es un mes en que se come mucho. Por eso, desde
-          Sabores del Mundo te acercamos distintas versiones para que
-          disfrutes de los platos de siempre, pero en su versión healthy.
-          <br /><br />
-          Algunos tips que puedes tener en cuenta a la hora de cocinar es dar
-          prioridad a los vegetales sobre las cosas fritas, así como a los
-          snacks y postres más frescos o ligeros, en lugar de las harinas
-          refinadas.<br /><br />
-          Siempre es posible darle la vuelta a ciertos ingredientes para que
-          no falten en la mesa platillos dignos de las celebraciones.
-        </p>
-        <ul style="list-style: none">
-          <li>Pavo relleno de verduras</li>
-          <img style="width: 20%" src="./img/Comida1.jpg" alt="Pavo relleno de verduras" />
+        <div class="tema">
+          <img class="tema_img" src="./img/Comida.jpg" alt="Pavo relleno de verduras" />
+          <p class="temaUno">
+            Entre la Navidad, el Año Nuevo y las reuniones con amigos que nunca
+            faltan, diciembre es un mes en que se come mucho. Por eso, desde
+            Sabores del Mundo te acercamos distintas versiones para que
+            disfrutes de los platos de siempre, pero en su versión healthy.
+            Algunos tips que puedes tener en cuenta a la hora de cocinar es dar
+            prioridad a los vegetales sobre las cosas fritas, así como a los
+            snacks y postres más frescos o ligeros, en lugar de las harinas
+            refinadas.
+            Siempre es posible darle la vuelta a ciertos ingredientes para que
+            no falten en la mesa platillos dignos de las celebraciones.
+          </p>
+        </div>
 
-          <li>Vitel Toné</li>
-          <img style="width: 20%" src="./img/Comida2.jpg" alt="Vitel Toné" />
+        <ul class="lista">
+          <li class="lista_item">
+            <h4>Pavo relleno de verduras</h4>
+            <img src="./img/Comida1.jpg" alt="Pavo relleno de verduras" />
+          </li>
 
-          <li>Ensalada de manzana</li>
-          <img style="width: 20%" src="./img/Comida3.jpg" alt="Ensalada de manzana" />
-          <li>Trufas veganas</li>
-          <img style="width: 20%" src="./img/Comida4.jpg" alt="Trufas veganas" />
+          <li class="lista_item">
+            <h4>Vitel Toné</h4>
+            <img src="./img/Comida2.jpg" alt="Vitel Toné" />
+          </li>
+
+          <li class="lista_item">
+            <h4>Ensalada de manzana</h4>
+            <img src="./img/Comida3.jpg" alt="Ensalada de manzana" />
+          </li>
+
+          <li class="lista_item">
+            <h4>Trufas veganas</h4>
+            <img src="./img/Comida4.jpg" alt="Trufas veganas" />
+          </li>
         </ul>
       </article>
-      <hr />
-      <article>
+
+      <br>
+
+      <article class="sections">
         <h3 id="aperitivo">RECORRE EL MUNDO EN 7 SÁNDWICHES</h3>
-        <img style="width: 20%" src="./img/Sandwiches.jpg" alt="SÁNDWICHES" />
-        <p>
-          Desde el relleno de milanesa tucumano en Argentina, hasta el de
-          Trinidad y Tobago que lleva garbanzo al curry, el emparedado es un
-          platillo que se ha sabido adaptar a los gustos de cada cultura.
-          Conoce diferentes versiones de este platillo universal. <br /><br />
-          Este 3 de noviembre se celebró el Día del Sándwich, y desde Sabores
-          dek Mundo te presentamos diferentes versiones de este platillo
-          universal.
-        </p>
-        <ul style="list-style: none">
-          <li>Milanesa tucumano - Argentina</li>
-          <img style="width: 20%" src="./img/Sandwiche1.jpg" alt="Milanesa tucumano - Argentina" />
-          <li>Bánh mì - Vietnam</li>
-          <img style="width: 20%" src="./img/Sandwiche2.jpg" alt="Bánh mì - Vietnam" />
-          <li>Pambazo - México</li>
-          <img style="width: 20%" src="./img/Sandwiche3.jpg" alt="Pambazo - México" />
-          <li>Smørrebrød - Dinamarca</li>
-          <img style="width: 20%" src="./img/Sandwiche4.jpg" alt="Smørrebrød - Dinamarca" />
-          <li>Yakisoba-pan - Japón</li>
-          <img style="width: 20%" src="./img/Sandwiche5.jpg" alt="Yakisoba-pan - Japón" />
-          <li>Fischbrötchen - Alemania</li>
-          <img style="width: 20%" src="./img/Sandwiche6.jpg" alt="Fischbrötchen - Alemania" />
-          <li>Doubles - Trinidad y Tobago</li>
-          <img style="width: 20%" src="./img/Sandwiche7.jpg" alt="Doubles - Trinidad y Tobago" />
+        <div class="tema">
+          <img class="tema_img" src="./img/Sandwiches.jpg" alt="SÁNDWICHES" />
+          <p class="temaUno">
+            Desde el relleno de milanesa tucumano en Argentina, hasta el de
+            Trinidad y Tobago que lleva garbanzo al curry, el emparedado es un
+            platillo que se ha sabido adaptar a los gustos de cada cultura.
+            Conoce diferentes versiones de este platillo universal. <br /><br />
+            Este 3 de noviembre se celebró el Día del Sándwich, y desde Sabores
+            dek Mundo te presentamos diferentes versiones de este platillo
+            universal.
+          </p>
+        </div>
+
+        <ul class="lista">
+          <li class="lista_item">
+            <h4>Milanesa tucumano - Argentina</h4>
+            <img src="./img/Sandwiche1.jpg" alt="Milanesa tucumano - Argentina" />
+          </li>
+          <li class="lista_item">
+            <h4>Bánh mì - Vietnam</h4>
+            <img src="./img/Sandwiche2.jpg" alt="Bánh mì - Vietnam" />
+          </li>
+          <li class="lista_item">
+            <h4>Pambazo - México</h4>
+            <img src="./img/Sandwiche3.jpg" alt="Pambazo - México" />
+          </li>
+          <li class="lista_item">
+            <h4>Smørrebrød - Dinamarca</h4>
+            <img src="./img/Sandwiche4.jpg" alt="Smørrebrød - Dinamarca" />
+          </li>
+          <li class="lista_item">
+            <h4>Yakisoba-pan - Japón</h4>
+            <img src="./img/Sandwiche5.jpg" alt="Yakisoba-pan - Japón" />
+          </li>
+          <li class="lista_item">
+            <h4>Fischbrötchen - Alemania</h4>
+            <img src="./img/Sandwiche6.jpg" alt="Fischbrötchen - Alemania" />
+          </li>
+          
         </ul>
       </article>
     </section>
 
-    <aside></aside>
+    <aside class="aside">
+      <h3>NOTICIAS</h3>
+      <div>        
+        <img src="./img/eventos.jpg" alt="Eventos Gastronómicos">
+        <h4>Eventos Gastronómicos</h4>
+      </div>
+
+      <div>        
+        <img src="./img/restaurantes.jpg" alt="Mejores Resturantes del Mundo">
+        <h4>Mejores Resturantes</h4>
+      </div>
+
+      <div>        
+        <img src="./img/recetas.jpg" alt="Recetas más Populares en el 2022">
+        <h4>Recetas más Populares</h4>
+      </div>
+
+      <div>        
+        <img src="./img/proyectos.jpg" alt="Proyectos Gastronómicos">
+        <h4>Compartiendo Momentos</h4>
+      </div>
+    </aside>
+
   </main>
 
-  <footer id="footer" style="background-color: burlywood">
-    <ul style="list-style: none">
+  <footer id="footer">
+    <ul>
       <li>
-        <a style="color: darkred" href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://elgourmet.com/programa/los-sabores-del-mundo" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
       </li>
       <li>
-        <a style="color: darkred" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://elgourmet.com/programa/los-sabores-del-mundo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
       </li>
       <li>
-        <a style="color: darkred" href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://elgourmet.com/programa/los-sabores-del-mundo" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       </li>
     </ul>
 
-    <p style="color: darkred">
-      Todos los derechos reservados por copy right
+    <p>
+      Todos los derechos reservados por copyright
       <i class="fa-regular fa-copyright"></i>
     </p>
+    <p>Sitio desarrollado por Web Applications Studio</p>
   </footer>
+
 </body>
 
 </html>
