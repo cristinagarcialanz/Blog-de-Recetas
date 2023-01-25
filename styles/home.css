@@ -70,28 +70,25 @@ img {
 /* MAIN */
 main {  
   position: absolute;
-  top: 10vh;
-  left: 0;
-  bottom: 10;
+  top: 10vh;  
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  
+  margin-bottom: 100px;
 }
 
-.sections {
-  background-color: rgb(250, 235, 215, 0.5);
+.articulo {
+  background-color: rgb(250, 235, 215, 0.6);
   color: black;
-  width: 80%;
-  height: auto;
-  margin: 5px;
-  padding: 5px;
+  width: 90%;
+  height: auto;  
   justify-content: center;
   align-items: center;
-  bottom: 10%;
+  margin: 2%;
+  padding: 1%;
 }
 
-.sections a{
+.articulo a{
   color: darkred;
   font-weight: 700;
 }
@@ -143,12 +140,12 @@ h4 {
 
 .lista_item img {
   width: 100%;
-  border: 5px solid rgb(250, 235, 215, 0.5);
+  border: 3px solid rgb(250, 235, 215, 0.6);
 }
 
 /* ASIDE */
 aside {  
-  background-color: rgb(250, 235, 215, 0.5);  
+  background-color: rgb(250, 235, 215, 0.6);  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
