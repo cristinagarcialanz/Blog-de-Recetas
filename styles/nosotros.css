@@ -13,7 +13,10 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
 }
 
 /* HEADER */
@@ -24,14 +27,14 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  color: darkred;
-  background-color: rgb(250, 235, 215, 0.9);
+  color: darkred;  
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
+  background-color:  rgb(250, 235, 215, 0.9);
+  box-shadow: 8px 5px 10px rgb(250, 235, 215, 0.9);
 }
-
 header img {
   width: 5%;
   min-width: 70px;
@@ -71,48 +74,108 @@ img {
 
 main {
   position: relative;
-  top: 15vh;
+  top: 0;
   left: 0;
-  bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;   
+  margin-top: 7vh;
 }
 
 .sections {
-  background-color: rgb(250, 235, 215, 0.5);
+  background-color: rgb(250, 235, 215, 0.7);
   color: black;
   width: 80%;
-  height: 100%;
-  margin: 5px;
-  padding: 10px;
+  height: auto;
   justify-content: center;
-  align-items: center;  
+  align-items: center;   
+  margin-top: 40px;
+}
+
+.sections>h2 {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.sections>p {
+  text-shadow: 1px 1px 1px rgb(250, 235, 215, 0.8);
+  margin: 10px;
 }
 
 section img {
   width: 30%;
 }
 
+.imagenes {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 /* GALERÍA */
 .galeria {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
-h3 {
-  background-color: rgb(250, 235, 215, 0.5);
+.galeria h2 {
+  background-color: rgb(250, 235, 215, 0.7);
   width: 60%;
   text-align: center;
+  margin-top: 20px;
+}
+
+.letrero {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px darkred, 0 0 30px darkred, 0 0 40px darkred, 0 0 55px darkred, 0 0 75px darkred;
+  animation: luminoso 1.3s infinite;
+}
+
+/* SOMBRAS */
+@keyframes luminoso {
+  0% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px darkred, 0 0 30px darkred, 0 0 40px darkred, 0 0 55px darkred, 0 0 75px darkred;
+  }
+
+  20% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px darkred, 0 0 30px darkred;
+  }
+
+  40% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px darkred, 0 0 30px darkred, 0 0 40px darkred, 0 0 55px darkred, 0 0 75px darkred;
+  }
+
+  50% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px darkred, 0 0 30px darkred, 0 0 40px darkred, 0 0 55px darkred, 0 0 75px darkred;
+  }
+
+  80% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px darkred, 0 0 30px darkred, 0 0 40px darkred;
+  }
+
+  100% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px darkred, 0 0 30px darkred, 0 0 40px darkred, 0 0 55px darkred, 0 0 75px darkred;
+  }
+}
+
+.galeria>p {
+  background-color: rgb(250, 235, 215, 0.7);
+  text-align: center;
+  padding: 5px;
+  width: 60%;
 }
 
 .grid {
-  background-color: rgb(250, 235, 215, 0.5);
+  background-color: rgb(250, 235, 215, 0.7);
   min-height: 500px;
   width: 60%;
   display: grid;
@@ -120,7 +183,7 @@ h3 {
   grid-template-rows: 1fr 1fr 1fr;
   margin: 1rem;
   column-gap: 5px;
-  row-gap: 5px;  
+  row-gap: 5px;
   flex-wrap: wrap;
 }
 
@@ -135,12 +198,13 @@ h3 {
   text-align: center;
   transition: all 0.75s;
   margin: 5%;
+  filter: sepia(100%);
 }
 
 .img:hover {
   transform: scale(1.05);
   transition: all 0.75s;
-  filter: sepia(100%);
+  filter: brightness(100%);
 }
 
 .img1 {
@@ -219,7 +283,7 @@ footer {
   width: 100vw;
   position: fixed;
   bottom: 0px;
-  left: 0px;
+  left: 0px;  
 }
 
 footer ul {
@@ -233,3 +297,5 @@ footer ul a {
   color: darkred;
   text-decoration: none;
 }
+
+
