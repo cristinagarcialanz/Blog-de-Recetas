@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
 
 body {
@@ -24,13 +24,12 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  color: darkred;  
+  color: darkred;
+  background-color: rgb(250, 235, 215, 0.9);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
-  background-color:  rgb(250, 235, 215, 0.9);
-  box-shadow: 8px 5px 10px rgb(250, 235, 215, 0.9);
 }
 
 header img {
@@ -63,52 +62,64 @@ header div a {
   padding: 3px;
 }
 
+
 img {
   width: 20%;
   padding: 10px;
 }
 
+@media (max-width:700px){
+  header{
+      flex-direction: column;
+      height: fit-content;
+  }
+
+ .titulo-principal{
+  font-size: 18px;
+ } 
+ 
+ .navegador{
+  display: flex;
+ }
+ 
+ .navegador a{
+  margin:5px;
+ }
+}
+
+
 /* MAIN */
 main {  
-  position: relative;
-  top: 10vh;  
-  height: 80%;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  bottom: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 100px;
-}
-section{
-  padding-bottom: 30px;
-  height: fit-content;
-  width: auto;
-
+  
 }
 
-.articulo {
-  background-color: rgb(250, 235, 215, 0.7);
+.sections {
+  background-color: rgb(250, 235, 215, 0.5);
   color: black;
-  width: 90%;
-  height: auto;  
+  width: 80%;
+  height: auto;
+  margin: 5px;
+  padding: 35px;
   justify-content: center;
   align-items: center;
-  margin: 2%;
-  padding: 1%;
-  scroll-margin-top: 70px;
+  bottom: 10%;
 }
 
-.articulo a{
+.sections a{
   color: darkred;
   font-weight: 700;
 }
 
-.articulo > h3 {
+h3 {
   text-align: center;
   padding: 5px;
-}
-
-.articulo > p{
-  text-shadow: 1px 1px 1px rgb(250, 235, 215, 0.8);  
 }
 
 .tema {
@@ -153,17 +164,120 @@ h4 {
 
 .lista_item img {
   width: 100%;
-  border: 3px solid rgb(250, 235, 215, 0.6);
+  border: 5px solid rgb(250, 235, 215, 0.5);
 }
 
+@media (max-width:700px){
+  main{
+  position: absolute;
+  top: 25vh;
+  left: 0;
+  bottom: 20;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  }
+
+  .sections .tema{
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .sections .tema img{
+    width: 100%;
+  }
+
+  .sections .tema p{
+    width: 100%;
+  }
+
+  .lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+  }
+  
+  .lista_item {
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  .lista_item img {
+    width: 100%;
+    border: 5px solid rgb(250, 235, 215, 0.5);
+  }
+
+  
+}
+
+@media (max-width:550px){
+  main{
+  position: absolute;
+  top: 28vh;
+  left: 0;
+  bottom: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  }
+
+  .sections .tema{
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .sections .tema img{
+    width: 100%;
+  }
+
+  .sections .tema p{
+    width: 100%;
+  }
+
+  .lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+  }
+  
+  .lista_item {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  .lista_item img {
+    width: 100%;
+    border: 5px solid rgb(250, 235, 215, 0.5);
+  }
+}
 /* ASIDE */
 aside {  
-  background-color: rgb(250, 235, 215, 0.6);  
+  background-color: rgb(250, 235, 215, 0.5);  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 20px;
+  
   height: 100vh;
 }
 
@@ -173,6 +287,7 @@ aside div img{
   justify-content: center;
   align-items: center;
 }
+
 
 /* FOOTER */
 footer {
@@ -199,5 +314,25 @@ footer ul {
 footer ul a {
   color: darkred;
   text-decoration: none;
+}
+
+@media (max-width:700px){
+  footer{
+    flex-direction: column;
+    height: fit-content;
+    padding: 5px;
+    margin: 5px
+}
+}
+
+@media (max-width:475px){
+  footer{
+    flex-direction: column;
+    height: fit-content;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
 }
 
